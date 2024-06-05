@@ -24,3 +24,5 @@ Database: MySQL<br />
 -> Book a Vehicle: Select a vehicle, enter required details, and proceed to the booking page.<br />
 -> Complete Booking: Enter pickup and drop-off addresses, make the payment, and confirm the booking.<br />
 -> Manage Bookings: View, edit, or cancel your bookings from the dashboard.<br />
+
+** Website may contain liscensed images. It is created purely for education purpose and no copyright infringement intended.**
