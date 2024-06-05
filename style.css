@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+
+body {
+    background: url(images/electric-vehicles-1.jpg);
+    justify-content: cover;
+}
+.form {
+    margin: 150px auto;
+    translate: -450px;
+    width: 300px;
+    padding: 30px 25px;
+    border-radius: 35px;
+    background: #fdedec;
+}
+h1.login-title {
+    color: #cb4335;
+    margin: 0px auto 25px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.login-input {
+    font-size: 15px;
+    border: 1.5px solid #ccc;
+    padding: 15px;
+    margin-bottom: 25px;
+    margin-left: 11px;
+    height: 25px;
+    width: calc(100% - 23px);
+    border-radius: 12px;
+}
+.login-input:focus {
+    border-color:#6e8095;
+    outline: none;
+}
+.login-button {
+    color: #fff;
+    background: #1a5276;
+    border: 1px;
+    outline: 2px;
+    width: 100%;
+    border-radius: 16px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.link {
+    margin-top: 10px;
+    color: #1f61d8;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.link a {
+    color: #1f61d8;
+}
+h3 {
+    font-weight: 500;
+    text-align: center;
+}

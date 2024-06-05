@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e6ebed;
+    color: #666666;
+    font-family: "Montserrat", sans-serif;
+}
+
+.material-icons-outlined{
+    vertical-align: middle;
+    line-height: 1px;
+}
+
+.text-primary{
+    color: #666666;
+}
+
+.text-blue{
+    color: #246dec;
+}
+
+.text-red{
+    color: #cc3c43;
+}
+
+.text-green{
+    color: #367952;
+}
+
+.text-orange{
+    color: #f5b74f;
+}
+
+.font-weight-bold{
+    font-weight: 600;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+        "sidebar header header header" 
+        "sidebar main main main";
+    height: 100vh;
+}
+
+/*--Header--*/
+.header {
+    grid-area: header;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+}
+
+.menu-icon{
+    display: none;
+}
+
+/*--Sidebar--*/
+#sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #21232d;
+    color: #9799ab;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.sidebar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 30px;
+}
+
+.sidebar-title > span {
+    display: none;
+}
+
+.sidebar-brand{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color:#fff;
+}
+
+.sidebar-list{
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.sidebar-list-item{
+    padding: 20px 20px 20px 20px;
+}
+
+.sidebar-list-item:hover{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+.log_out{
+    width: 220px;
+    position: fixed;
+    padding: 20px 20px 20px 20px;
+    bottom: 0;
+  }
+.log_out:hover{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+.sidebar-responsive{
+    display: inline !important;
+    position: absolute;
+}
+
+/*--Main--*/
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title{
+    display: flex;
+    justify-content: space-between;
+}
+.main-title > p {
+    font-size: 20px;
+}
+
+
+
+  
+.form{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    translate: 50%;
+  /*  background: #f2f3f7;   */
+    background: transparent;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  /*  box-shadow: -3px 3px 10px -5px rgba(0,0,0,0.2);    */
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    padding: 30px 30px;
+}
+.form h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+/*.form p{
+    font-size: 14px;
+    padding-bottom: 8px;
+} */
+.form form{
+    margin: 8px 0;
+}
+.form form .profile-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    margin: 18px 30px;
+    background: #f2f3f7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/768px-Circle-icons-profile.svg.png");
+    border-radius: 50%;
+    border: 4px solid #006692;
+}
+.file-upload{
+    position: absolute;
+    top: 0;
+    right: -15px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    border-radius: 50%;
+    border: 2px solid #d2d3d7;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #006692, #f2f3f7 50%);
+    background-size: 100% 200%;
+    transition: all 1s;
+    font-size: 14px;
+    cursor: pointer;
+}
+form input[type="file"]{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    cursor: pointer;
+    padding: 20px;
+}
+form i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #333;
+    z-index: 100;
+    pointer-events: none;
+    cursor: pointer;
+}
+.file-upload:hover{
+    background-position: 0 100%;
+}
+.file-upload:hover i{
+    color: #2938aa;
+}
+
+.form .grid-details{
+    display: flex;
+}
+.form .grid-details .input:first-child{
+    margin-right: 8px;
+    width: 100%;
+}
+.form .grid-details .input:last-child{
+    margin-left: 8px;
+    width: 100%;
+}
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.form form .input input:focus,
+.form form .input input:valid{
+    border: 2px solid#00b3ff;
+    transition: 0.1s ease;
+    outline: none;
+}
+
+.form form input.button{
+    height: 45px;
+    border: none;
+    color: #f2f3f7;
+    width: 100%;
+    background: #006692;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+    border: 2px solid #2938aa;
+}
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a{
+    color: #006692;
+    transition: 0.5s all
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
+textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 5px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.form form textarea{
+    width: 100%;
+    font-size: 14px;
+    padding: 0.8rem 1.2rem;
+  /*  margin-bottom: 17px;  */
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+/*
+
+@media screen and (max-width: 992px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 3fr;
+        grid-template-areas: 
+            "header"
+            "main";
+    }
+    #sidebar{
+        display: none;
+    }
+    .menu-icon {
+        display: inline;
+    }
+    .sidebar-title > span {
+        display: inline;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .main-line{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-left{
+        display: none;
+    }
+}  */

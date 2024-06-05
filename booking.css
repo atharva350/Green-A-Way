@@ -1,0 +1,94 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+table a{
+    color:#666666;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:nth-child(even) #myBtn{
+    background-color: white;
+}
+tr:nth-child(even) #myBtn2{
+    background-color: white;
+}
+.notfound img{
+    height:60%%;
+    width:40%;
+}
+.notfound{
+    text-align:center;
+    color:#666666;
+}
+.notfound a{
+    color:#666666;
+    text-decoration:underline;
+}
+
+#myBtn{
+    border:none;
+    background-color: #e6ebed;
+    color:#666666;
+    font-size:95%;
+    cursor:pointer;
+}
+#myBtn2{
+    border:none;
+    background-color: #e6ebed;
+    color:#666666;
+    font-size:95%;
+    cursor:pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  font-size:20px;
+  font-weight:500;
+}
+.modal-content button{
+    width:225px;
+    height:50px;
+    font-size:17px;
+    font-weight:555;
+    background-color:#fefefe;;
+    border-radius:10px;
+    margin:12px;
+    cursor:pointer;
+}
+
+.modal-content #back{
+    color:green;
+}
+.modal-content #yes{
+    color:red;
+}
