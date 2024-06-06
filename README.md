@@ -26,3 +26,11 @@ Database: MySQL<br />
 -> Manage Bookings: View, edit, or cancel your bookings from the dashboard.<br />
 
 ** Website may contain liscensed images. It is created purely for education purpose and no copyright infringement intended.**
+
+![image](https://github.com/atharva350/Green-A-Way/assets/147875370/2f8ca534-a10b-405b-b732-fd7eed4c8eea)
+![image](https://github.com/atharva350/Green-A-Way/assets/147875370/4809677a-a89f-4697-ab11-101ebac9ce1c)
+![image](https://github.com/atharva350/Green-A-Way/assets/147875370/6d9eda8d-20c4-48a1-9ada-3a215f3a0e8c)
+
+
+
+
